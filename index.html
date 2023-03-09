@@ -12,35 +12,36 @@
     <p id="description">This survey will help you decide which bootcamp to enroll for.</p>
 
     <form id="survey-form" autocomplete="off">
-      <label id="name-label">Name:<input id="name" type="text" placeholder="Enter your full name" required></label>
-      <label id="email-label">Email:<input id="email" type="email" required placeholder="Enter your correct email"></label>
-      <label id="number-label">Age:<input min="16" max="35" id="number" type="number" placeholder="Enter your age"></label>
-      <label>Gender: 
+      <label id="name-label" class="label-title">Name:<input id="name" type="text" placeholder="Enter your full name" required></label>
+      <label id="email-label" class="label-title">Email:<input id="email" type="email" required placeholder="Enter your correct email"></label>
+      <label id="number-label" class="label-title">Age:<input min="16" max="35" id="number" type="number" placeholder="Enter your age"></label>
+      <label class="label-title">Gender: 
         <select id="dropdown">
+          <option disabled selected>Select A Gender</option>
           <option name="gender">Male</option>
           <option name="gender">Female</option>
           <option name="gender">Others</option>
         </select>
       </label>
-      <div class="courses">
-      <labe >Courses: 
-        <label><input type="radio" name="course" value="Software Developer"> Software Developer</label>
-        <label><input type="radio" name="course" value="Web Developer">Web Developer</label>
-      </label>
-    </div>
-
-      <div class="payment">
-      <label>Mode of Payment</label>
-      <label><input type="checkbox" value="online" name="payment"> Online Payment</label>
-      <label><input type="checkbox" value="cash" name="payment"> Cash</label>
-      <label><input type="checkbox" value="card" name="payment"> Card</label>
-      <label><input type="checkbox" value="isa" name="payment"> Income Share Agreement</label>
-      <label><input type="checkbox" value="scholarship" name="payment"> Scholarship</label>
-    </div>
-
-      <label for="comment-text">Any comment: </label>
-      <textarea id="comment-text" rows="10" cols="20"></textarea>
+    <div class="courses">
+      <label class="label-title">Courses: </label>
+        <label><input type="radio" name="course" value="Software Developer" class="radio-inline"> Software Developer</label>
+        <label><input type="radio" name="course" value="Web Developer" class="radio-inline"> Web Developer</label>
       
+    </div>
+
+    <div class="payment">
+      <label class="label-title">Mode of Payment</label>
+      <label><input type="checkbox" value="online" name="payment" class="radio-inline"> Online Payment</label>
+      <label><input type="checkbox" value="cash" name="payment" class="radio-inline"> Cash</label>
+      <label><input type="checkbox" value="card" name="payment" class="radio-inline"> Card</label>
+      <label><input type="checkbox" value="isa" name="payment" class="radio-inline"> Income Share Agreement</label>
+      <label><input type="checkbox" value="scholarship" name="payment" class="radio-inline"> Scholarship</label>
+    </div>
+
+      <label for="comment-text" class="label-title">Any comment: </label>
+      <textarea id="comment-text" rows="10" cols="20"></textarea>
+
       <button type="submit" id="submit">Submit</button>
     </form>
 
