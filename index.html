@@ -11,10 +11,33 @@
     <h1 id="title">Which online course or coding bootcamp is best for me?</h1>
     <p id="description">This survey will help you decide which bootcamp to enroll for.</p>
 
-    <form id="survey-form">
-      <label>Name:<input id="name" type="text" required></label>
-      <label>Email:<input id="email" type="email" required></label>
-      <label>Age:<input min="16" max="35" id="number" type="number" ></label>
+    <form id="survey-form" autocomplete="off">
+      <label id="name-label">Name:<input id="name" type="text" placeholder="Enter your full name" required></label>
+      <label id="email-label">Email:<input id="email" type="email" required placeholder="Enter your correct email"></label>
+      <label id="number-label">Age:<input min="16" max="35" id="number" type="number" placeholder="Enter your age"></label>
+      <label>Gender: 
+        <select id="dropdown">
+          <option name="gender">Male</option>
+          <option name="gender">Female</option>
+          <option name="gender">Others</option>
+        </select>
+      </label>
+      <label>Courses: 
+        <label><input type="radio" name="course" value="Software Developer"> Software Developer</label>
+        <label><input type="radio" name="course" value="Web Developer">Web Developer</label>
+      </label>
+
+      <label>Mode of Payment</label>
+      <label><input type="checkbox" value="online" name="payment"> Online Payment</label>
+      <label><input type="checkbox" value="cash" name="payment"> Cash</label>
+      <label><input type="checkbox" value="card" name="payment"> Card</label>
+      <label><input type="checkbox" value="isa" name="payment"> Income Share Agreement</label>
+      <label><input type="checkbox" value="scholarship" name="payment"> Scholarship</label>
+
+      <label for="comment-text">Any comment: </label>
+      <textarea id="comment-text" rows="10" cols="20"></textarea>
+      
+      <button type="submit" id="submit">Submit</button>
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
